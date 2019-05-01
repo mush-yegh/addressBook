@@ -1,0 +1,23 @@
+div.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.93);
+    text-align: center;
+}
+
+div.addItemBlock {
+    margin: 100px auto 10px auto;
+    color: #fff;
+}
+
+div.addItemRow {
+    margin-top: 10px;
+}
+
+div.addItemRow>label {
+    margin-right: 5px;
+    font-weight: bold;
+}

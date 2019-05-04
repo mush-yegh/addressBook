@@ -1,25 +1,12 @@
 import React, { Component } from "react";
 
 class EditItem extends Component {
-  constructor(props) {
-    super(props);
-
-    const { id, fName, lName, country, city } = this.props.itemToEdit;
-    this.state = {
-      id: id,
-      fName: fName,
-      lName: lName,
-      country: country,
-      city: city
-    };
-  }
-
   state = {
-    id: 0,
-    fName: "",
-    lName: "",
-    country: "",
-    city: ""
+    id: this.props.itemToEdit.id,
+    fName: this.props.itemToEdit.fName,
+    lName: this.props.itemToEdit.lName,
+    country: this.props.itemToEdit.country,
+    city: this.props.itemToEdit.city
   };
 
   handleChange = e => {
